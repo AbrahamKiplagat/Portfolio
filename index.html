@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+.sidebar{
+  background-color: #6633ff;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: sticky;
+  left: 0;
+  top: 0;
+  
+  /* text-align: center; */
+}
+.sidebar{
+  width: 30px;
+  min-width: 30px;
+  overflow: hidden;
+  transition: .75s ease-in-out;
+  z-index: 2;
+}
+.sidebar:hover{
+  min-width: 200px;
+  transition:0.75s ease;
+  overflow: hidden;
+}
+body{
+  display: flex;
+  /* background-color: brown; */
+  width: 100%;
+  height: 100%;
+}
+.one {
+  
+  height: 700px;
+  width: 100%;
+  color: #ff33ff;
+  font-size: xx-large;
+}
+.name{
+padding: 100px;
+padding-top: 50px;
+/* padding-top: 100px; */
+width: 90%;
+text-align: center;
+justify-content: space-around;
+}
+.mypick{
+  width:100%;
+}
+
+.contact h3{
+  color: #f64c72;
+  margin-left: 25%;
+}
+.contact p{
+color: whitesmoke;
+font-size: x-large;
+width: 80%;
+margin: 0;
+}
+#Services h3{
+margin-left: 35%;
+font-size: xx-large;
+color: #ffbb00;
+}
+#Services p{
+  font-size: x-large;
+  margin-left: 15%;
+  color: whitesmoke;
+  text-align: left;
+}
+.sidebarItems{
+  display: flex;
+  border-left: 0px solid #16a085;
+}
+.sidebarItems:hover{
+ background: #2f2fa27a;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ border-left: 20px solid aqua;
+}
+/* @media (max-width:800px) {
+body{
+  justify-content: space-between;
+}
+.mypick{
+  width: 80%;
+  transition: .75s;
+} 
+.mypick:hover{
+  width:100%;
+  transition: .75s;
+}
+}
+@media (max-width:500px) {
+#Services p{ 
+  margin-left: 0%;
+}
+.name{
+  width: 100%;
+}
+
+.sidebar:hover{
+  width: 50%;
+  position: fixed;
+  height: 100%;
+  
+} 
+}
+.github a:hover{
+padding-bottom: 10px;
+padding-top: 10px;
+} */
+  </style>
+</head>
+<body>
+  <!-- <div style="height: 100% ;width: 100%; background-color: blueviolet;" class=""> -->
+    <!-- Done display flex on the side bar hope it will display aside each other -->
+    <div class="sidebar">
+      <div class="">
+        <img style="width: 200px;height: 200px; border-radius: 100%;" src="./img/image-profile.jpg" alt="">
+      
+     
+      </div>
+          <div class="sidebarItems">
+            <img style="width: 30px;height: 30px;" src="./img/icons-home.png" alt="">
+          <a style="text-decoration: none;
+          font-size: x-large;
+          color: #ffbb00;" href="#Home">Home</a>
+         
+          </div>
+          <div class="sidebarItems">
+            <img style="width: 30px;height: 30px;" src="./img/icons8-about-48.png" alt="">
+          <a style="text-decoration: none;
+          font-size: x-large;
+          color: #ffbb00;" href="#aboutme">About Me</a>
+          
+          </div>
+          <!-- <a style="text-decoration: none;
+          font-size: x-large;
+          color: #ffbb00;" href="#">Gallery</a>
+          <hr style="color: #ffbb00;"> -->
+          <div class="sidebarItems">
+            <img style="width: 30px;height: 30px;" src="./img/icons8-services-48.png" alt="">
+          <a style="text-decoration: none;
+          font-size: x-large;
+          color: #ffbb00;" href="#Services">Services</a>
+          
+          </div>
+          <div class="sidebarItems">
+            <img style="width: 30px;height: 30px;" src="./img/icons8-faq-48.png" alt="">
+          <a style="text-decoration: none;
+          font-size: x-large;
+          color: #ffbb00;" href="#Faq">Faq</a>
+          
+          </div>
+          </div>
+         <div class="mypick "> <!-- this is a section for the other display flex -->
+   
+   <!-- section1 -->
+       <section id="Home" style="background-color: silver;">
+   <div class="one">
+    <!--github container  for the facebook, github-->
+    <div style="width: 200px;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffbb0000;
+    position: absolute;
+    top: 2pt;
+    right: 5pt;"
+     class="github">
+    <a href=""><img src="./img/icons8-facebook-48.png" alt="fb"></a>
+    <a href="https://github.com/AbrahamKiplagat"><img src="./img/icons8-github-48.png" alt=""></a>
+    <a href=""><img src="./img/icons8-twitter-48.png" alt=""></a>
+
+    </div>
+    <div class="profile" style="position: absolute;z-index: 0;
+    top: 24%;
+    left: 20%;
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;"
+    >
+    <p>Hello,My Name is <br>
+     <b style="font-size: 10vh;"> Abraham Kiplagat</b><br>
+    Iam a Software Developer</p>
+    <img 
+    style="width: 200px;height:200px;" 
+    src="./img/image-profile.jpg" alt="">
+   </div>
+  </div>
+  </section>
+  
+<!-- section2 -->
+<section id="aboutme" 
+style="background-color: #f78cf7;height: 700px;text-align: center;">
+  <h3 style="width: auto;padding-top: 50px;color: #ffbb00;">Aboutme</h3>
+  <div class="name text-success d-lg-flex d-sm-block">
+    <img 
+    style="width: 400px;
+    height: 400px;
+    " 
+    src="./img/image-profile.jpg" alt="">
+    <p 
+    style="font-size: x-large;color: #0033ff;">Iam a enthustiastic 
+    and experienced web and app developer,
+Due to studying android app development using Kotlin
+programing language on google africa developer programs.
+And also learning software development in Institute of software 
+technologies whereby I got more skills evolution.</p>
+
+   </div>
+</section>
+<!-- Second Last section for my services -->
+<section id="Services" 
+style="background: #a2ff85;
+height: 700px;
+width: 100%;">
+<div style="padding-top: 5%;">
+<h3>Services</h3>
+<div>
+<p>By being a experienced<b style="color: #2f2fa2;"> web and app developer</b>,<br>
+I hereby find worth helping you on design works <br>
+and developement work services.<br>
+Due to studying android app development using Kotlin<br>
+ programing language on google africa developer programs.<br>
+ And also learning software development in Institute of software technologies 
+</p>
+<p style="text-decoration: underline;font-style: italic;">Resent Projects:</p>
+<p><a style="font-size: x-large;color: #2f2fa2;"
+   href="/Gen-news/index.html">>>1.Read over me project</a></p>
+   <p><a style="font-size: x-large;color: #2f2fa2;"
+    href="/Rhinex solutions/index.html">>>2.Business advert project</a></p>
+    <p><a style="font-size: x-large;color: #2f2fa2;"
+      href="/Exercice6/">>>3.Business advert project</a></p>
+</div>
+</div>
+<!-- expand this section using a button to show resume -->
+<div>
+  <p></p>
+</div>
+</section>
+
+<section id="Faq" 
+style="width: 100%;
+height: 700px;
+background: #cacbda;"
+>
+<div class="contact" style="margin-left: 10%;
+padding-top: 5%;">
+<h3>Contact Me</h3>
+<p>For any queries about web designing and software
+   development Services, Contact me via:-</p>
+<p>Name</p>
+<textarea style="width: 80%;"
+ name="name" id="name" 
+ cols="1" rows="1">
+</textarea>
+<p>E-mail</p>
+<input type="email" 
+name="email" id="email" 
+style="width: 80%;">
+<div>
+<p>Message</p>
+<textarea name="message" 
+id="message" cols="1"
+ rows="1" style="width: 80%;height: 200px;">
+</textarea>
+</div>
+<button style="margin-left: 25%;background-color: #f64c72;color: whitesmoke;">SUBMIT</button>
+</div>
+</section>
+</div>
+  <!-- 
+    https://github.com/AbrahamKiplagat
+    implement corousels on home
+    implement modals on about me to show resume
+  -->
+<script src="js/bootstrap.min.js"></script>
+<script src="scrypt.js"></script>
+</body>
+</html>
