@@ -1,4 +1,9 @@
-
+#Home{
+  background-image: url(/img/images\ \(2\).jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 .sidebar{
   background-color: rgb(10, 10, 10);
   height: 600px;
@@ -67,19 +72,21 @@ font-size: x-large;
 width: 80%;
 margin: 0;
 }
-.button{
+button{
   background-color: #ff33ff;
   border-radius: 12px;
   font-size: large;
   color: whitesmoke;
   text-decoration: none;
   padding: 10px;
+  color: whitesmoke;border-color: transparent;
 }
-.button:hover{
+button:hover{
   background-color: lavender;
   border-color: #ff33ff;
   padding: 13px;
   transition: .75s;
+  color: black;
   box-shadow: 0px 0px 7px 2px #ff33ff;
 }
 #Services{
@@ -129,10 +136,32 @@ color: #ff33ff;
   border-left: 0px solid #16a085;
 }
 .sidebarItems:hover{
- background: #2f2fa27a;
+ background: rgba(0, 0, 0, 0.781);
  padding-top: 20px;
  padding-bottom: 20px;
  border-left: 20px solid aqua;
+}
+.cardResent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cardservices:nth-child(n ) {
+  margin-right: 20px;
+  border-radius: 20px;
+
+}
+.cardservices:nth-child(n ):hover{
+  position: relative;
+   width: 230px;
+  transition: .75s ease-in-out;
+}
+.cardservices{
+  width: 150px;
+  height: 150px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .profile{
   position: relative;

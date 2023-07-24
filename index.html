@@ -125,8 +125,8 @@ padding-top: 10px;
   <!-- <div style="height: 100% ;width: 100%; background-color: blueviolet;" class=""> -->
     <!-- Done display flex on the side bar hope it will display aside each other -->
     <div class="sidebar">
-      <div class="">
-        <img style="width: 200px;height: 200px; border-radius: 100%;" src="./img/image-profile.jpg" alt="">
+      <div class="profilepic">
+        <img style="width: 200px;height: 200px; border-radius: 100%;filter: brightness(2);" src="./img/image-profile.jpg" alt="">
       
      
       </div>
@@ -166,7 +166,7 @@ padding-top: 10px;
          <div class="mypick "> <!-- this is a section for the other display flex -->
    
    <!-- section1 -->
-       <section id="Home" style="background-color: whitesmoke;">
+       <section id="Home">
    <div class="one">
     <!--github container  for the facebook, github-->
     <div style="width: 200px;
@@ -178,9 +178,9 @@ padding-top: 10px;
     top: 2pt;
     right: 5pt;"
      class="github">
-    <a href=""><img src="./img/icons8-facebook-48.png" alt="fb"></a>
-    <a href="https://github.com/AbrahamKiplagat"><img src="./img/icons8-github-48.png" alt=""></a>
-    <a href=""><img src="./img/icons8-twitter-48.png" alt=""></a>
+    <a target="_blank"  href=""><img src="./img/icons8-facebook-48.png" alt="fb"></a>
+    <a target="_blank" href="https://github.com/AbrahamKiplagat"><img src="./img/icons8-github-48.png" alt=""></a>
+    <a target="_blank"  href=""><img src="./img/icons8-twitter-48.png" alt=""></a>
 
     </div>
     <div class="profile" style="position: absolute;z-index: 0;
@@ -206,8 +206,8 @@ style="background-color: whitesmoke;height: 700px;text-align: center;">
   <h3 style="width: auto;padding-top: 50px;color: #ffbb00;">Aboutme</h3>
   <div class="name text-success d-lg-flex d-sm-block">
     <img 
-    style="width: 400px;
-    height: 400px;
+    style="width: 50vw;
+    height: 50vh;
     " 
     src="./img/promo (2).jpg" alt="">
     <p 
@@ -236,12 +236,20 @@ Due to studying android app development using Kotlin<br>
  And also learning software development in Institute of software technologies 
 </p>
 <p style="text-decoration: underline;font-style: italic;">Resent Projects:</p>
-<p><a style="font-size: x-large;color: #2f2fa2;"
-   href="/Gen-news/index.html">>>1.Read over me project</a></p>
+<span class="cardResent">
+<div class="cardservices" style="background-image: url(/img/read.png);">
+  <p><a style="font-size: x-large;color: #2f2fa2;"
+   href="/Gen-news/index.html">Read over me project</a></p>
+  </div>
+<div class="cardservices" style="background-image: url(/img/bike-repairs.png);">
    <p><a style="font-size: x-large;color: #2f2fa2;"
-    href="/Rhinex solutions/index.html">>>2.Business advert project</a></p>
-    <p><a style="font-size: x-large;color: #2f2fa2;"
-      href="/Exercice6/">>>3.Business advert project</a></p>
+    href="/Rhinex-solutions/index.html">Business advert project</a></p>
+   </div>
+  <div class="cardservices" style="background-image: url(img/yogurt-1.png);"> 
+     <p><a style="font-size: x-large;color: #2f2fa2;"
+      href="/Exercice6/">Creamy & Youghut</a></p>
+     </div>
+    </span>
 </div>
 </div>
 <!-- expand this section using a button to show resume -->
@@ -276,7 +284,7 @@ id="message" cols="1"
  rows="1" style="width: 80%;height: 200px;">
 </textarea>
 </div>
-<button style="margin-left: 25%;background-color: #f64c72;color: whitesmoke;">SUBMIT</button>
+<button style="margin-left: 25%;;">SUBMIT</button>
 </div>
 </section>
 </div>
