@@ -1,0 +1,47 @@
+body{
+  background-image: url(./img/bkg-blu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+.links a{
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+}
+b{
+  color: rgb(114, 3, 158);
+}
+.slide1{
+  margin-top: 8%;
+  width: 40vw;
+}
+.slide1 button{
+  height: 30px;
+  border-color: transparent;
+  background-color: white;
+}
+.slidetestimonials{
+  display: flex;
+  width: 20vw;
+}
+.slidetestimonials img{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+.testimonials p, .testimonials h6{
+margin: 0;
+}
+.grp{
+  display: flex;
+  margin-right: 2%;
+  margin-top: 8%;
+}

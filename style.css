@@ -1,0 +1,343 @@
+
+.sidebar{
+  background-color: #6633ff;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 30px;
+  min-width: 30px;
+  overflow: hidden;
+  transition: .75s ease-in-out;
+  z-index: 2;
+}
+.sidebar:hover{
+  min-width: 200px;
+  transition:0.75s ease;
+  overflow: hidden;
+}
+body{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.one {
+  
+  height: 700px;
+  width: 100%;
+  color: #ff33ff;
+  font-size: xx-large;
+}
+
+.proimg{
+        width: 200px;
+        height: 200px; 
+        border-radius: 100%;
+        transition: scale 400ms;
+}
+.proimg:hover{
+scale: 120%;
+rotate: 7deg;
+box-shadow: 0px 0px 7px 2px #ff33ff;
+filter: brightness(2) ;
+}
+.name{
+padding: 100px;
+padding-top: 50px;
+width: 90%;
+text-align: center;
+justify-content: space-around;
+}
+.mypick{
+  width:100%;
+}
+
+.contact h3{
+  color: #ff33ff;
+  margin-left: 25%;
+}
+.contact p{
+color: #0033ff;
+font-size: x-large;
+width: 80%;
+margin: 0;
+}
+.button{
+  background-color: #ff33ff;
+  border-radius: 12px;
+  font-size: large;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px;
+}
+.button:hover{
+  background-color: lavender;
+  border-color: #ff33ff;
+  padding: 13px;
+  transition: .75s;
+  box-shadow: 0px 0px 7px 2px #ff33ff;
+}
+#Services{
+  overflow-y: scroll;
+  
+  min-height: 700px;
+}
+#Services h3{
+margin-left: 35%;
+font-size: xx-large;
+color: #ff33ff;
+}
+#Services p{
+  font-size: x-large;
+  margin-left: 15%;
+  color: #0033ff;
+  text-align: left;
+}
+.resentdtn{
+  margin-top: 80px;
+  font-size: x-large;
+  color:rgb(92, 0, 128);
+}
+
+.resentProjects{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%; 
+  scroll-snap-align: center;
+}
+.resent{
+  width: 150px;
+  height: 200px;
+  margin-left: 2%;
+  background: lavenderblush;
+}
+.resent:hover{
+  position: relative;
+  width: 350px;
+  height: 250px;
+  transition: .75s ease-in-out; 
+  box-shadow: 7px 7px 37px 7px #ff33ff;
+}
+.sidebarItems{
+  display: flex;
+  border-left: 0px solid #16a085;
+}
+.sidebarItems:hover{
+ background: #2f2fa27a;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ border-left: 20px solid aqua;
+}
+.profile{
+  position: relative;
+  animation: myfirst 5s ;
+  transition: .75s linear;
+  animation-direction:normal;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+#name{
+  width: 80%;
+border-color: #2f2fa2;
+background-color: transparent;
+border-radius: 100% 29% 90% 23% / 0% 100% 0% 100%;
+height: 50px;
+text-align: center;
+}
+.contact{
+  margin-left: 10%;
+  padding-top: 5%;
+}
+
+#email{
+  width: 80%;
+background-color: transparent;
+border-color: #2f2fa2;
+border-radius: 100% 29% 90% 23% / 0% 100% 0% 100%;
+height: 50px;
+text-align: center;
+}
+@keyframes myfirst {
+  0%   {left: 0px;}
+  25%  { margin-left: 30%;}
+  50%  {margin-left: 50%;}
+  75%  {margin-left: 30%; }
+  100% { left: 0px; }
+}
+.profile p{
+   margin-left: 30px;
+   padding-top: 200px;
+}
+#message{
+  background-color: transparent;
+ width: 80%;
+ border-color: #2f2fa2;
+ margin-bottom: 15px;
+ border-radius: 100% 29% 90% 23% / 0% 100% 0% 100%;
+height: 200px;
+text-align: center;
+}
+@media (max-width:1200px) {
+  .resent{
+  width: 90px;
+  height: 150px;
+}
+.resentProjects{
+  width: 100%;
+  overflow: scroll; 
+}
+.resent:hover{
+  width: 300px;
+  height: 210px;
+  transition: .75s ease-in-out; 
+  box-shadow: 2px -1px  #ff33ff;
+  position: relative;
+}
+.resentdtn{
+  margin-top: 20px;
+  font-size: x-large;
+  overflow: hidden;
+  color:rgb(92, 0, 128);
+}
+}
+/* */ 
+@media (max-width:800px) {
+body{
+  justify-content: space-between;
+}
+.name{
+  display: block;
+  width: 100%;
+    height: 630px;;
+    overflow-y: scroll;
+}
+.resent{
+  width: 40px;
+  height: 150px;
+}
+.resentProjects{
+  width: 100%;
+  overflow: scroll; 
+}
+
+.resent:hover{
+ 
+  width: 290px;
+  height: 200px;
+  transition: .75s ease-in-out; 
+  box-shadow: 7px 7px 37px 7px #ff33ff;
+  position: relative;
+}
+.resentdtn{
+  margin-top: 20px;
+  font-size: x-large;
+  overflow: hidden;
+  color:rgb(92, 0, 128);
+}
+ h3{
+padding-top:  0;
+}
+
+}
+@media (max-width:500px) {
+#Services p{ 
+  margin-left: 0%;
+}
+.profile{
+    left: 0%;
+    position: relative;
+}
+.name{
+  width: 100%; 
+}
+.name{
+padding: 0;
+padding-top: 0;
+text-align: center;
+justify-content: space-around;
+}
+.name p{
+text-align: left;
+padding-left: 30px;
+}
+ 
+#Services p{
+  margin-left: 30px;
+}
+.servicescnt{
+  height: 680px;
+  overflow-y: scroll;
+}
+.profile{
+  position: relative;
+ animation: myfirst 4s ;
+ transition: .75s linear;
+ animation-direction:normal;
+ animation-iteration-count: infinite;
+ animation-delay: 0s;
+}
+
+@keyframes myfirst {
+ 0%   {left: 0px;}
+ 25%  { right: 20%;}
+ 50%  {right: 0%;}
+ 75%  {left: 20%; }
+ 100% { right: 50px; }
+}
+.resent{
+  width: 350px;
+  height: 250px;
+  box-shadow: 7px 7px 37px 7px #ff33ff;
+}
+.resent:hover{
+  width: 350px;
+  height: 250px;
+  box-shadow: 7px 7px 37px 7px #ff33ff;
+}
+.contact{
+  margin-left: 0;
+  padding-top: 5%;
+}
+.contact p {
+  width: 95%;
+}
+#email{
+  width: 95%;
+}
+#message{
+ width: 95%;
+}
+#name{
+  width: 95%;
+}
+}
+
+::-webkit-scrollbar{
+ width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color:#6633ff2a;
+  width: 4px;
+}
+  input::placeholder{
+    color: #0033ff;
+  }
+  textarea::placeholder{
+    color: #0033ff;
+  }
+  textarea{
+    color: blue;
+    font-size: 20px;
+    line-height: 24px; 
+  }
+  input{
+    color: blue;
+    font-size: 20px;
+    line-height: 24px;
+  }
