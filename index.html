@@ -6,126 +6,13 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <style>
-/* .sidebar{
-  background-color: #6633ff;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: sticky;
-  left: 0;
-  top: 0;
-  
-  /* text-align: center;
-}
-.sidebar{
-  width: 30px;
-  min-width: 30px;
-  overflow: hidden;
-  transition: .75s ease-in-out;
-  z-index: 2;
-}
-.sidebar:hover{
-  min-width: 200px;
-  transition:0.75s ease;
-  overflow: hidden;
-}
-body{
-  display: flex;
-  /* background-color: brown; 
-  width: 100%;
-  height: 100%;
-}
-.one {
-  
-  height: 700px;
-  width: 100%;
-  color: #ff33ff;
-  font-size: xx-large;
-}
-.name{
-padding: 100px;
-padding-top: 50px;
-/* padding-top: 100px; 
-width: 90%;
-text-align: center;
-justify-content: space-around;
-}
-.mypick{
-  width:100%;
-}
 
-.contact h3{
-  color: #f64c72;
-  margin-left: 25%;
-}
-.contact p{
-color: whitesmoke;
-font-size: x-large;
-width: 80%;
-margin: 0;
-}
-#Services h3{
-margin-left: 35%;
-font-size: xx-large;
-color: #ffbb00;
-}
-#Services p{
-  font-size: x-large;
-  margin-left: 15%;
-  color: whitesmoke;
-  text-align: left;
-}
-.sidebarItems{
-  display: flex;
-  border-left: 0px solid #16a085;
-}
-.sidebarItems:hover{
- background: #2f2fa27a;
- padding-top: 20px;
- padding-bottom: 20px;
- border-left: 20px solid aqua;
-} */
-/* @media (max-width:800px) {
-body{
-  justify-content: space-between;
-}
-.mypick{
-  width: 80%;
-  transition: .75s;
-} 
-.mypick:hover{
-  width:100%;
-  transition: .75s;
-}
-}
-@media (max-width:500px) {
-#Services p{ 
-  margin-left: 0%;
-}
-.name{
-  width: 100%;
-}
-
-.sidebar:hover{
-  width: 50%;
-  position: fixed;
-  height: 100%;
-  
-} 
-}
-.github a:hover{
-padding-bottom: 10px;
-padding-top: 10px;
-} */
-  </style>
 </head>
 <body>
   <!-- <div style="height: 100% ;width: 100%; background-color: blueviolet;" class=""> -->
     <!-- Done display flex on the side bar hope it will display aside each other -->
     <div class="sidebar">
-      <div class="profilepic">
+      <div class="">
         <img style="width: 200px;height: 200px; border-radius: 100%;filter: brightness(2);" src="./img/image-profile.jpg" alt="">
       
      
@@ -166,7 +53,9 @@ padding-top: 10px;
          <div class="mypick "> <!-- this is a section for the other display flex -->
    
    <!-- section1 -->
-       <section id="Home">
+       <section id="Home" style="background-image: url(/img/images\ \(2\).jpg);
+       background-repeat: no-repeat;
+       background-size: 100% 100%;">
    <div class="one">
     <!--github container  for the facebook, github-->
     <div style="width: 200px;
@@ -175,60 +64,91 @@ padding-top: 10px;
     justify-content: space-around;
     background-color: #ffbb0000;
     position: absolute;
-    top: 2pt;
+    top: 2pt;z-index: 1;
     right: 5pt;"
      class="github">
-    <a target="_blank"  href=""><img src="./img/icons8-facebook-48.png" alt="fb"></a>
-    <a target="_blank" href="https://github.com/AbrahamKiplagat"><img src="./img/icons8-github-48.png" alt=""></a>
-    <a target="_blank"  href=""><img src="./img/icons8-twitter-48.png" alt=""></a>
+    <a style="height: auto;width: auto;" href="#"><img src="./img/icons8-facebook-48.png" alt="fb"></a>
+  
 
+<div style="height: auto;width: auto;"  href="#">
+  <img type="button" data-bs-toggle="modal"
+   data-bs-target="#myModal" src="./img/icons8-github-48.png" alt="">
+</div>
+<a style="height: auto;width: auto;"  href="#"><img src="./img/icons8-twitter-48.png" alt=""></a>
     </div>
-    <div class="profile" style="position: absolute;z-index: 0;
-    top: 24%;
-    left: 20%;
-    display:flex ;
-    justify-content: space-around;
-    align-items: center;"
-    >
+<!-- The Modal -->
+<div class="modal" id="myModal" style="z-index: 1;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header d-block">
+        <div class="d-flex">
+        <p>Wow! You are about to openthis link </p>
+        <button type="button" class="btn-close" 
+        data-bs-dismiss="modal"></button>
+       </div>        
+          <button type="button" 
+          class="btn btn-primary" 
+          id="okButton">OK</button>
+       
+</div>
+    </div>
+  </div>
+</div>
+   
+    
+    <div class="profile">
     <p>Hello,My Name is <br>
      <b style="font-size: 10vh;"> Abraham Kiplagat</b><br>
     Iam a Software Developer</p>
     <!-- <img 
     style="width: 200px;height:200px;" 
-    src="./img/image-profile.jpg" alt=""> -->
-   </div>
+    src="./img/image-profile.jpg" alt="">
+   </div> -->
   </div>
   </section>
   
 <!-- section2 -->
 <section id="aboutme" 
-style="background-color: whitesmoke;height: 700px;text-align: center;">
-  <h3 style="width: auto;padding-top: 50px;color: #ffbb00;">Aboutme</h3>
-  <div class="name text-success d-lg-flex d-sm-block">
+style="
+height: 700px;
+text-align: center;">
+  <h3 style="width: auto;
+  padding-top: 50px;
+  color: #ff33ff;">
+  Aboutme</h3>
+  <div class="name
+   text-success 
+   d-lg-flex 
+   d-sm-block">
     <img 
-    style="width: 50vw;
-    height: 50vh;
+    style="width: 300px;
+    height: 300px;
     " 
     src="./img/promo (2).jpg" alt="">
+    <span>
     <p 
     style="font-size: x-large;color: #0033ff;">Iam a enthustiastic 
     and experienced web and app developer,
-Due to studying android app development using Kotlin
-programing language on google africa developer programs.
-And also learning software development in Institute of software 
-technologies whereby I got more skills evolution.</p>
-
+    Due to studying android app development using Kotlin
+    programing language on google africa developer programs.
+    And also learning software development in Institute of software 
+    technologies whereby I got more skills evolution.</p>
+    <a href="#" class="button">Resume</a>
+  </span>
    </div>
 </section>
 <!-- Second Last section for my services -->
 <section id="Services" 
-style="background: whitesmoke;
+style="
 height: 700px;
 width: 100%;">
-<div style="padding-top: 5%;">
+<div class="servicescnt"
+style="padding-top: 5%;">
 <h3>Services</h3>
 <div>
-<p>By being a experienced<b style="color: #2f2fa2;"> web and app developer</b>,<br>
+<p>By being a experienced<b> web and app developer</b>,<br>
 I hereby find worth helping you on design works <br>
 and developement work services.<br>
 Due to studying android app development using Kotlin<br>
@@ -236,20 +156,53 @@ Due to studying android app development using Kotlin<br>
  And also learning software development in Institute of software technologies 
 </p>
 <p style="text-decoration: underline;font-style: italic;">Resent Projects:</p>
-<span class="cardResent">
-<div class="cardservices" style="background-image: url(/img/read.png);">
-  <p><a style="font-size: x-large;color: #2f2fa2;"
-   href="/Gen-news/index.html">Read over me project</a></p>
-  </div>
-<div class="cardservices" style="background-image: url(/img/bike-repairs.png);">
-   <p><a style="font-size: x-large;color: #2f2fa2;"
-    href="/Rhinex-solutions/index.html">Business advert project</a></p>
-   </div>
-  <div class="cardservices" style="background-image: url(img/yogurt-1.png);"> 
-     <p><a style="font-size: x-large;color: #2f2fa2;"
-      href="/Exercice6/">Creamy & Youghut</a></p>
-     </div>
-    </span>
+    <div class="resentProjects">
+      
+        <a class="resent" style="background-image: url(/img/read.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 20px;
+        
+        text-decoration: none;"
+        href="/Gen-news/index.html">
+      <p  class="resentdtn"style="">Read me project</p>
+    </a>
+    <a class="resent" style="background-image: url(/img/advert.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    font-size: x-large;color: black;
+    text-decoration: none;"
+    href="/Rhinex solutions/index.html">
+  <p  class="resentdtn"style="">Business advert project</p>
+</a>
+<a class="resent" style="background-image: url(/img/yogurt-1.png);
+background-repeat: no-repeat;
+background-size:100% 100%;
+border-radius: 20px;
+font-size: x-large;color: black;
+text-decoration: none;"
+ href="/Exercice6/">
+<p class="resentdtn" style="">Creamy & Youghut </p>
+</a>
+<a class="resent" style="background-image: url(/img/bike-repairs.png);
+background-repeat: no-repeat;
+background-size:100% 100%;
+border-radius: 20px;
+font-size: x-large;color: black;
+text-decoration: none;"
+ href="/Bike-Repairs/index.html">
+<p  class="resentdtn"style="">Bike & Repairs </p>
+</a>
+<a class="resent" style="background-image: url(/img/gmail.png);
+background-repeat: no-repeat;
+background-size:100% 100%;
+border-radius: 20px;
+font-size: x-large;color: black;
+text-decoration: none;"
+ href="/gmail/index.html">
+<p  class="resentdtn"style="">Gmail News </p>
+</a>
 </div>
 </div>
 <!-- expand this section using a button to show resume -->
@@ -261,7 +214,7 @@ Due to studying android app development using Kotlin<br>
 <section id="Faq" 
 style="width: 100%;
 height: 700px;
-background: whitesmoke;"
+"
 >
 <div class="contact" style="margin-left: 10%;
 padding-top: 5%;">
@@ -269,22 +222,30 @@ padding-top: 5%;">
 <p>For any queries about web designing and software
    development Services, Contact me via:-</p>
 <p>Name</p>
-<textarea style="width: 80%;"
+<input type="text" style="width: 80%;
+border-color: #2f2fa2;
+background-color: transparent;"
  name="name" id="name" 
  cols="1" rows="1">
-</textarea>
+
 <p>E-mail</p>
 <input type="email" 
 name="email" id="email" 
-style="width: 80%;">
+style="width: 80%;
+background-color: transparent;
+border-color: #2f2fa2;">
 <div>
 <p>Message</p>
 <textarea name="message" 
 id="message" cols="1"
- rows="1" style="width: 80%;height: 200px;">
+ rows="1" style="background-color: transparent;
+ width: 80%;
+ height: 200px;
+ border-color: #2f2fa2;
+ margin-bottom: 15px;">
 </textarea>
 </div>
-<button style="margin-left: 25%;;">SUBMIT</button>
+<a style="margin-left: 25%;" href="#" class="button">SUBMIT</a>
 </div>
 </section>
 </div>
